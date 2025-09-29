@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        
-        <meta charset="UTF-8">
-        <title>Lisboa</title>
-        <link rel="stylesheet" href="styles.css">
 
-        <style>
-            .fotografias{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-            .fotografias img{
-                width: 150px;
-                border-radius: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Lisboa</h1>
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="local.html">Localização</a>
-  <a href="multimedia.html">Multimédia</a>
-  <a href="info.html">Informação</a>
-  </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Lisboa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-        </header>
-        <main>
-            <h2>Multimédia</h2>
-            <p>Nesta página encontra contúdos multimedia.</p>
+<body>
+  <header>
+    <h1>Lisboa</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="local.html">Localização</a>
+      <a href="multimedia.html">Multimédia</a>
+      <a href="info.html">Informação</a>
+    </nav>
+  </header>
 
-            <p>
-                <a href= "#fotografias">Fotografias</a>
-                <a href= "#vídeo">Vídeo</a>
-                <a href= "#poema">Poema</a> 
-            </p>
-            <section>
-                <h3>Fotografias</h3>
-                <div id="fotografias" class="fotografias">
-                    <img src="images.jpg/Lisboa1.jpg" alt="vista por do sol">
-                    <img src="images.jpg/Lisboa2.jpg" alt="vista cidade">
-                    <img src="images.jpg/Lisboa3.jpg" alt="vista cidade">
-                    <img src="images.jpg/Lisboa4.jpg" alt="ponte">
-                    <img src="images.jpg/Lisboa5.jpg" alt="vista de noite">
-                    <img src="images.jpg/Lisboa6.jpg" alt="praça do comercio">
-                    <img src="images.jpg/Lisboa7.jpg" alt="eletrico">
-                    <img src="images.jpg/Lisboa8.jpg" alt="vista cidade">
+  <main>
+    <section class="hero-section">
+      <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1200&h=400&fit=crop" alt="Lisboa">
+      <div class="hero-text">
+        <h2>Bem-vindo a Lisboa</h2>
+      </div>
+    </section>
 
-                </div>
-            </section>
+    <h2>Multimédia</h2>
+    <p>Nesta página encontra conteúdos multimedia.</p>
 
-            <section>
-                <h3>Vídeo</h3>
-                <div id="vídeo" class="vídeo"</div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hWRmyqrq2MM?si=IDhUJ3j_94Mumjx5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-            </section>
+    <div class="menu-interno">
+      <a href="#fotografias">Fotografias</a>
+      <a href="#video">Vídeo</a>
+      <a href="#poema">Poema</a>
+    </div>
 
-            <section>
-                <h3>Poesia</h3>
-                <div id="poema" class="poema">
-                <p>Alguém diz com lentidão:<br>
-                “Lisboa, sabes…”<br>
-                Eu sei. É uma rapariga<br>
-                descalça e leve,<br>
-                um vento súbito e claro<br>
-                nos cabelos,<br>
-                algumas rugas finas<br>
-                a espreitar-lhe os olhos,<br>
-                a solidão aberta<br>
-                nos lábios e nos dedos,<br>
-                descendo degraus<br>
-                e degraus e degraus até ao rio.Eu sei. E tu, sabias?<br>
-            
-                    </div>
-            </section>
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
-    </body>
+    <section>
+      <h3 id="fotografias">Fotografias</h3>
+      <div class="fotografias">
+        <img src="images.jpg/Lisboa1.jpg" alt="vista por do sol">
+        <img src="images.jpg/Lisboa2.jpg" alt="vista cidade">
+        <img src="images.jpg/Lisboa3.jpg" alt="vista cidade">
+        <img src="images.jpg/Lisboa4.jpg" alt="ponte">
+        <img src="images.jpg/Lisboa5.jpg" alt="vista de noite">
+        <img src="images.jpg/Lisboa6.jpg" alt="praça do comercio">
+        <img src="images.jpg/Lisboa7.jpg" alt="eletrico">
+        <img src="images.jpg/Lisboa8.jpg" alt="vista cidade">
+      </div>
+    </section>
+
+    <section>
+      <h3 id="video">Vídeo</h3>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hWRmyqrq2MM?si=IDhUJ3j_94Mumjx5"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h3 id="poema">Poesia</h3>
+      <div class="poema">
+        <p>Alguém diz com lentidão:<br>
+          "Lisboa, sabes…"<br>
+          Eu sei. É uma rapariga<br>
+          descalça e leve,<br>
+          um vento súbito e claro<br>
+          nos cabelos,<br>
+          algumas rugas finas<br>
+          a espreitar-lhe os olhos,<br>
+          a solidão aberta<br>
+          nos lábios e nos dedos,<br>
+          descendo degraus<br>
+          e degraus e degraus até ao rio.Eu sei. E tu, sabias?<br>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>DIW 2025</p>
+  </footer>
+</body>
+
 </html>

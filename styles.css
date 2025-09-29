@@ -11,53 +11,167 @@ header {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 nav {
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 10px;
-    border: 2px solid #333;   
-      border-radius: 8px;
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 nav a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
-    border: 2px solid #333;   
-      border-radius: 8px;
-    margin: 0 15px;
-    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #128be2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .labs {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 20px;       
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .lab {
-  background-color: #128be2; 
-  border: 1px solid #128be2;
-  border-radius: 12px;
-  padding: 15px 20px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #128be2;
+    border: 1px solid #128be2;
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .lab:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.lab h3 {
-  margin: 0 0 10px;
-  font-weight: bold;
+.lab h4 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
 }
 
 .lab p {
-  margin: 0;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.lab a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.lab a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fotografias img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #128be2;
+    border-bottom: 2px solid #128be2;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #128be2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.diw a {
+    color: #128be2;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    color: #333;
+}
+
+.diw img {
+    width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero-text h2 {
+        font-size: 8vw;
+    }
+
+    .hero-section img {
+        height: 250px;
+    }
+
+    .menu-interno a {
+        padding: 8px 15px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .fotografias img {
+        width: 150px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    h2, h3 {
+        font-size: 1.3em;
+    }
 }
