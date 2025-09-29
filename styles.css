@@ -138,40 +138,40 @@ ul {
 }
 
 @media (max-width: 768px) {
-    body {
+      body {
         padding: 10px;
-    }
+      }
 
-    nav a {
-        padding: 8px 15px;
+      nav a {
+        padding: 10px 20px;
         margin: 5px;
-        font-size: 14px;
-    }
+        font-size: 16px;
+      }
 
-    .hero-text h2 {
-        font-size: 8vw;
-    }
+      .hero-text h2 {
+        font-size: 10vw;
+      }
 
-    .hero-section img {
-        height: 250px;
-    }
+      .hero-section img {
+        height: 300px;
+      }
 
-    .menu-interno a {
-        padding: 8px 15px;
+      .menu-interno a {
+        padding: 12px 20px;
         margin: 5px;
-        font-size: 14px;
-    }
+        font-size: 16px;
+      }
 
-    .fotografias img {
-        width: 150px;
-    }
+      .fotografias img {
+        width: 180px;
+      }
 
-    .video iframe {
+      .video iframe {
         width: 100%;
-        height: 250px;
-    }
+        height: 300px;
+      }
 
-    h2, h3 {
-        font-size: 1.3em;
+      h2, h3 {
+        font-size: 1.5em;
+      }
     }
-}
