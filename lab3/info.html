@@ -1,109 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lisboa</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>A minha Cidade</h1>
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="local.html">Localização</a>
-  <a href="multimedia.html">Multimédia</a>
-  <a href="info.html">Informação</a>
-  </nav>
 
-        </header>
-        <main>
-            <h2>Informações</h2>
-            <p>Algumas informações sobre Lisboa:</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Lisboa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-            <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        table {
-            border-collapse: collapse;
-            margin: 20px auto;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        td {
-            border: 2px solid #333;
-            padding: 8px 12px;
-            text-align: left;
-            vertical-align: middle;
-        }
-        
-        td {
-            width: 150px;
-            text-align: center;
-        }
-        
-        td:first-child {
-            background-color: #e8e8e8;
-            font-weight: bold;
-            width: 100px;
-        }
-        
-        td:nth-child(2) {
-            background-color: #f0f0f0;
-            text-align: left;
-            padding-left: 15px;
-        }
-        
-        td:last-child {
-            background-color: white;
-            text-align: right;
-        }
-        
-        .link {
-            color: blue;
-            text-decoration: underline;
-        }
-        
-        .link:hover {
-            color: darkblue;
-        }
-    </style>
-            <table>
-        <tr>
+<body>
+  <header>
+    <h1>A minha Cidade</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="local.html">Localização</a>
+      <a href="multimedia.html">Multimédia</a>
+      <a href="info.html">Informação</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Informações</h2>
+    <p>Algumas informações sobre Lisboa:</p>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>População</h3>
+        <p>Lisboa tem aproximadamente 506.892 habitantes, sendo uma das cidades mais populosas de Portugal.</p>
+        <img src="https://pixabay.com/pt/photos/el%C3%A9ctrico-comboio-estrada-4379656/" alt="cidade">
+      </div>
+
+      <div class="grid-item">
+        <h3>Área</h3>
+        <p>A cidade ocupa cerca de 100 km² de área, distribuída por várias colinas características.</p>
+        <img src="images/area.jpg" alt="Área">
+      </div>
+
+      <div class="grid-item tabela-info">
+        <h3>Dados Gerais</h3>
+        <table>
+          <tr>
             <td rowspan="2">Demografia</td>
             <td>População</td>
             <td>506.892 hab</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>densidade populacional</td>
             <td>5066 hab/km²</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td rowspan="3">Geografia</td>
             <td>Área</td>
             <td>100km²</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Região</td>
             <td>Lisboa</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>País</td>
             <td>Portugal</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Website</td>
             <td></td>
-            <td><a href="http://www.cm-lisboa.pt" class="link">www.cm-lisboa.pt</a></td>
-        </tr>
-    </table>
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
-    </body>
+            <td><a href="http://www.cm-lisboa.pt" target="_blank">www.cm-lisboa.pt</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>DIW 2025</p>
+  </footer>
+</body>
+
 </html>
