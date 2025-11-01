@@ -9,20 +9,19 @@
 <body>
     <header>
         <h1>🛒 DEISI Shop</h1>
-
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#cesto">Cesto</a></li>
+                <li><a href="#checkout">Checkout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Secção de Controles (Filtro, Ordenação, Pesquisa) -->
+      
         <section id="controles">
             <h2>Selecione os seus Produtos</h2>
-            
             <div class="controles-container">
                 <div class="controle">
                     <label for="filtro-categoria">Filtrar:</label>
@@ -32,39 +31,43 @@
                 </div>
 
                 <div class="controle">
-                    <label for="ordenacao">Ordenar:</label>
-                    <select id="ordenacao">
+                    <label for="ordenar">Ordenar:</label>
+                    <select id="ordenar">
                         <option value="">Selecione</option>
-                        <option value="preco-asc">Preço Crescente</option>
-                        <option value="preco-desc">Preço Decrescente</option>
+                        <option value="crescente">Preço Crescente</option>
+                        <option value="decrescente">Preço Decrescente</option>
                     </select>
                 </div>
 
                 <div class="controle">
-                    <label for="pesquisa">Procurar:</label>
-                    <input type="text" id="pesquisa" placeholder="pesquise por produto">
+                    <label for="procurar">Procurar:</label>
+                    <input type="text" id="procurar" placeholder="pesquise por produto">
                 </div>
             </div>
         </section>
 
-        <!-- Secção de Produtos -->
+        
         <section id="produtos">
-            <p class="loading">A carregar produtos...</p>
+            <div id="lista-produtos">
+                <p class="loading">A carregar produtos...</p>
+            </div>
         </section>
 
-        <!-- Secção do Cesto -->
+        
         <section id="cesto">
             <h2>Cesto de Compras</h2>
-            <p>O seu cesto está vazio.</p>
+            <div id="produtos-selecionados">
+                <p>O seu cesto está vazio.</p>
+            </div>
+            <div class="total-cesto">
+                Total: €<span id="custo-total">0.00</span>
+            </div>
         </section>
 
-        <!-- Secção de Checkout -->
-        <section id="checkout" style="display: none;">
+    
+        <section id="checkout">
             <h2>🛍️ Checkout</h2>
-            
             <div class="checkout-info">
-                <p class="total-checkout">Custo total: €<span id="total-checkout">0.00</span></p>
-                
                 <div class="checkout-opcoes">
                     <div class="opcao">
                         <label>
@@ -74,8 +77,8 @@
                     </div>
 
                     <div class="opcao">
-                        <label for="cupao-input">Cupão de desconto:</label>
-                        <input type="text" id="cupao-input" placeholder="Insira o cupão">
+                        <label for="cupao-desconto">Cupão de desconto:</label>
+                        <input type="text" id="cupao-desconto" placeholder="Insira o cupão">
                     </div>
 
                     <button id="btn-comprar">Comprar</button>
